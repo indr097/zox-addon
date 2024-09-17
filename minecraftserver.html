@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our official Minecraft server and experience epic builds, community events, and survival challenges with fellow gamers.">
+    <title>CronoCraftz Minecraft Server - Zox Addon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/minecraftserver.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="/assets/icons/logo yt.png" alt="Channel Logo">
+        </div>
+        <div class="hamburger" id="hamburger"></div>
+            <span></span><span></span><span></span>
+        </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+    
+                <!-- Dropdown for Events -->
+                <li class="dropdown">
+                    <a href="event.html" class="dropdown-btn">Events</a>
+                    <ul class="dropdown-content">
+                        <a href="#">Upcoming Events</a>
+                        <a href="#">Past Events</a>
+                        <a href="#">Event Gallery</a>
+                        <a href="#">Giveaways</a>
+                    </ul>
+                </li>
+    
+                <!-- Dropdown for Contents -->
+                <li class="dropdown">
+                    <a href="content.html" class="dropdown-btn">Contents</a>
+                    <ul class="dropdown-content">
+                        <a href="#">Videos</a>
+                        <a href="#">Live Now</a>
+                        <a href="#">Upcoming Streams</a>
+                        <a href="#">Past Streams</a>
+                    </ul>
+                </li>
+                <!-- Dropdown for Servers -->
+                <li class="dropdown">
+                    <a href="server.html" class="dropdown-btn">Servers</a>
+                    <ul class="dropdown-content">
+                        <a href="minecraftserver.html">Minecraft servers</a>
+                        <a href="#">Game Servers</a>
+                        <a href="#">Discord Servers</a>
+                    </ul>
+                </li>
+    
+                <li><a href="games.html">Games</a></li>
+    
+    <!-- Dropdown for Store -->
+                 <li class="dropdown">
+                    <a href="store.html" class="dropdown-btn">Store</a>
+                    <ul class="dropdown-content">
+                        <a href="#">Subscriptions</a>
+                        <a href="marchandise.html">Marchandise</a>
+                        <a href="#">Youtube Membership</a>
+                    </ul>
+                </li>
+    
+                  <!-- Dropdown for Services -->
+                  <li class="dropdown">
+                    <a href="service.html" class="dropdown-btn">Services</a>
+                    <ul class="dropdown-content">
+                        <a href="generaldisc.html">General Discussion</a>
+                        <a href="contactus.html">Contact us</a>
+                    </ul>
+                </li>
+                <li><a href="aboutme.html">About</a></li>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <a href="login.html" class="nav-link">Login</a>
+        </div>
+        </nav>
+
+    <!-- Server Name with Lightning Animation -->
+    <div class="container text-center mt-5">
+        <h1 id="server-name" class="gradient-text"><b>CronoCraftz</h1>
+    </div>
+
+    <!-- IP Address Section -->
+    <div class="container text-center mt-4">
+        <div class="input-group mb-3">
+            <input type="text" id="server-ip" class="form-control" value="play.epicmcserver.com" readonly>
+            <div class="input-group-append">
+                <button class="btn btn-primary" onclick="copyIP()">Copy IP</button>
+            </div>
+        </div>
+        <p class="text-muted">Click to copy the IP address</p>
+    </div>
+
+    <!-- What do we have Section -->
+    <div class="container mt-5">
+        <h2 class="text-center section-title">What we have?</h2>
+        <div class="row mt-4">
+            <!-- Feature Boxes -->
+            <div class="col-md-4">
+                <div class="card feature-box">
+                    <img src="images/moon-above-clouds-dream.jpg" class="card-img-top" alt="Thumbnail 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Worlds</h5>
+                        <p class="card-text">Explore unique custom worlds built by our team.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-box">
+                    <img src="images/" class="card-img-top" alt="Thumbnail 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Survival Mode</h5>
+                        <p class="card-text">Test your skills in survival mode with a twist!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-box">
+                    <img src="images/" class="card-img-top" alt="Thumbnail 3">
+                    <div class="card-body">
+                        <h5 class="card-title">PvP Arena</h5>
+                        <p class="card-text">Fight against others in our custom PvP arena.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-box">
+                    <img src="images/" class="card-img-top" alt="Thumbnail 4">
+                    <div class="card-body">
+                        <h5 class="card-title">LifeSteal Mode</h5>
+                        <p class="card-text">Let your imagination run wild in creative mode.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-box">
+                    <img src="images/" class="card-img-top" alt="Thumbnail 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Events</h5>
+                        <p class="card-text">Participate in server-wide events and challenges.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-box">
+                    <img src="images/" class="card-img-top" alt="Thumbnail 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Mini-Games</h5>
+                        <p class="card-text">Play fun mini-games with friends and others.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Purchase Options -->
+    <div class="container mt-5">
+        <h2 class="text-center section-title">Buy In-Game Items, Membership & Ranks</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card purchase-box">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">In-Game Items</h5>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card purchase-box">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Membership</h5>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card purchase-box">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ranks</h5>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="container mt-5">
+        <h2 class="text-center section-title">Meet Our Team</h2>
+        <ul class="list-unstyled text-center team-list">
+            <li><strong>Owner:</strong> Steve</li>
+            <li><strong>Admin:</strong> Alex</li>
+            <li><strong>Supporter:</strong> Herobrine</li>
+        </ul>
+    </div>
+
+    <!-- How to Join Section -->
+    <div class="container mt-5">
+        <h2 class="text-center section-title">How to Join</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="ip-box">
+                    <h3>Java IP</h3>
+                    <p>play.java.epicmcserver.com</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="ip-box">
+                    <h3>Bedrock IP</h3>
+                    <p>play.bedrock.epicmcserver.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="/assets/icons/google.png" alt="Google"></a>
+            <a href="#"><img src="/assets/icons/facebook social.png" alt="Facebook"></a>
+            <a href="#"><img src="/assets/icons/twitter social.png" alt="Twitter"></a>
+            <a href="#"><img src="/assets/icons/youtube logo.png" alt="YouTube"></a>
+            </div>
+        </div>
+        <p>&copy; 2024 Zox Addon. All Rights Reserved.</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="/js/minecraftserver.js"></script>
+</body>
+
+</html>

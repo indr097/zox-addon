@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    background-color: #070707;
+    /* Background Image for the Entire Website */
+    background-image: url('/assets/images/background.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+    background-repeat: no-repeat; /* No repetition of the image */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    background: url('Images/rectangle-neon\ \(2\).jpg') no-repeat center center fixed; /* Add the background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    margin: 0;
+    flex-wrap: wrap; /* Added for responsiveness */
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+/* Styling for search form */
+.form-inline {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjusts spacing from other navbar elements */
+}
+
+.form-control {
+    width: 250px; /* Sets a standard width for the search bar */
+    border-radius: 25px; /* Rounded corners for a cleaner look */
+    border: 1px solid #ccc; /* Border color */
+    padding: 8px 15px; /* Padding for better readability */
+    transition: width 0.4s ease-in-out; /* Smooth transition for dynamic width */
+}
+
+/* Search button styling */
+.btn-outline-success {
+    border-color: #28a745; /* Success green border */
+    color: #28a745; /* Text color */
+    border-radius: 25px; /* Rounded corners */
+    padding: 6px 15px; /* Button padding */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Login icon styling */
+.nav-link i {
+    color: #fff; /* White icon color */
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #fff; /* White text color */
+    margin-left: 20px; /* Spacing from search bar */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect on login icon */
+.nav-link:hover {
+    color: #28a745; /* Green color on hover */
+}
+
+
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -50px;
+    left: -20px;
+}
+
+.nav-menu li {
+    position: relative;
+    margin: 0 15px;
+    left: -70px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    top: 45px;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.dropdown-content li a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #555;
+}
+
+/* Show Dropdown on Hover */
+.nav-menu li:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        
+    }
+    .user-icon {
+        margin-left: 10px;
+    }
+}
+/* Media Queries for Mobile View */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px; /* Smaller logo font */
+    }
+
+    .nav-links li a {
+        font-size: 14px; /* Smaller font size for nav links */
+    }
+
+    .search-login input {
+        width: 100%; /* Full width search input */
+    }
+
+    .login-btn {
+        width: 100%; /* Full width login button */
+        padding: 10px; /* Increase padding for better touch */
+    }
+
+    .service-card {
+        width: 100%; /* Full width service cards */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .footer {
+        padding: 15px; /* Smaller padding for footer */
+    }
+}
+/* Header */
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #282c34;
+    color: white;
+    margin-top: 0; /* Remove any extra margin */
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+/* Mobile-specific styling */
+.nav-toggle {
+    display: none; /* Hidden by default, show it in mobile view */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Show the toggle button and hide links in mobile view */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        color: white;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+.nav-links li a:hover {
+    color: #ff416c;
+}
+
+.contact-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    /* color: #ccc; */
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablet view (768px and below) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .search-login {
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+
+    .contact-section {
+        padding: 30px;
+    }
+
+    .contact-section h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+/* Mobile view (480px and below) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .search-login {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #search-bar {
+        margin-bottom: 10px;
+    }
+
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rotateImage {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-grid, .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quick-links a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-left: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

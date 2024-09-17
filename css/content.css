@@ -1,0 +1,481 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    background-color: #f4f4f4;
+    /* Background Image for the Entire Website */
+    background-image: url('/assets/images/pirate-ship-purple-3840x2160-18210.png'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+    background-repeat: no-repeat; /* No repetition of the image */
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    background: url('Images/rectangle-neon\ \(2\).jpg') no-repeat center center fixed; /* Add the background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    margin: 0;
+    flex-wrap: wrap; /* Added for responsiveness */
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+/* Styling for search form */
+.form-inline {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjusts spacing from other navbar elements */
+}
+
+.form-control {
+    width: 250px; /* Sets a standard width for the search bar */
+    border-radius: 25px; /* Rounded corners for a cleaner look */
+    border: 1px solid #ccc; /* Border color */
+    padding: 8px 15px; /* Padding for better readability */
+    transition: width 0.4s ease-in-out; /* Smooth transition for dynamic width */
+}
+
+/* Search button styling */
+.btn-outline-success {
+    border-color: #28a745; /* Success green border */
+    color: #28a745; /* Text color */
+    border-radius: 25px; /* Rounded corners */
+    padding: 6px 15px; /* Button padding */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Login icon styling */
+.nav-link i {
+    color: #fff; /* White icon color */
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #fff; /* White text color */
+    margin-left: 20px; /* Spacing from search bar */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect on login icon */
+.nav-link:hover {
+    color: #28a745; /* Green color on hover */
+}
+
+
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -50px;
+    left: -20px;
+}
+
+.nav-menu li {
+    position: relative;
+    margin: 0 15px;
+    left: -70px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    top: 45px;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.dropdown-content li a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #555;
+}
+
+/* Show Dropdown on Hover */
+.nav-menu li:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        
+    }
+    .user-icon {
+        margin-left: 10px;
+    }
+}
+/* Header */
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #282c34;
+    color: white;
+    margin-top: 0; /* Remove any extra margin */
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+/* Mobile-specific styling */
+.nav-toggle {
+    display: none; /* Hidden by default, show it in mobile view */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Show the toggle button and hide links in mobile view */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        color: white;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Hero Section (Wallpaper) */
+.hero {
+    /* background-image: url('wallpaper.jpg/i'); */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Content Section Styling */
+#content {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-category {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+   
+}
+
+.video-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    
+}
+
+.video-card p {
+    margin-bottom: 10px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f1f4;
+    color: white;
+    margin-top: 0; /* Remove any extra margin */
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+/* Mobile-specific styling */
+.nav-toggle {
+    display: none; /* Hidden by default, show it in mobile view */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Show the toggle button and hide links in mobile view */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        color: white;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2.5em;
+    color: #804e4e;
+}
+/* Category Buttons */
+.category-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.category-buttons button {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-buttons button:hover {
+    background-color: #ffba00;
+}
+
+/* Video Categories Section */
+#video-categories {
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video-item {
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.video-item iframe {
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid #ff6b6b;
+}
+
+.video-item:hover {
+    transform: scale(1.05);
+    border-color: #ffba00;
+}
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quick-links a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-left: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

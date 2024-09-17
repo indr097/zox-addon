@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- Event Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/events</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Games Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/games</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+ <!-- Content Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/store</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+ <!-- Contact us Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/store</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- General Discussion Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/general-discussion</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Login Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/login</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Signup Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/signup</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Merchandise Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/merchandise</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Minecraft Server Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/minecraft-server</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Server Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/server</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/services</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Store Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/store</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+ <!-- Abut us Page -->
+  <url>
+    <loc>https://www.yourgamingwebsite.com/store</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+</urlset>

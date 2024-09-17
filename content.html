@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay informed about upcoming gaming events, tournaments, and live streams. Never miss out on the action with our event schedule!">
+    <title>Content Page - Zox Addon</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/content.css">
+</head>
+<body>
+      <!-- Navbar -->
+      <nav>
+        <div class="logo">
+            <img src="/assets/icons/logo yt.png" alt="Channel Logo">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    <!-- Navigation Bar -->
+    <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+
+            <!-- Dropdown for Events -->
+            <li class="dropdown">
+                <a href="event.html" class="dropdown-btn">Events</a>
+                <ul class="dropdown-content">
+                    <a href="#">Upcoming Events</a>
+                    <a href="#">Past Events</a>
+                    <a href="#">Event Gallery</a>
+                    <a href="#">Giveaways</a>
+                </ul>
+            </li>
+
+            <!-- Dropdown for Contents -->
+            <li class="dropdown">
+                <a href="content.html" class="dropdown-btn">Contents</a>
+                <ul class="dropdown-content">
+                    <a href="#">Videos</a>
+                    <a href="#">Live Now</a>
+                    <a href="#">Upcoming Streams</a>
+                    <a href="#">Past Streams</a>
+                </ul>
+            </li>
+            <!-- Dropdown for Servers -->
+            <li class="dropdown">
+                <a href="server.html" class="dropdown-btn">Servers</a>
+                <ul class="dropdown-content">
+                    <a href="minecraftserver.html">Minecraft servers</a>
+                    <a href="#">Game Servers</a>
+                    <a href="#">Discord Servers</a>
+                </ul>
+            </li>
+
+            <li><a href="games.html">Games</a></li>
+
+<!-- Dropdown for Store -->
+             <li class="dropdown">
+                <a href="store.html" class="dropdown-btn">Store</a>
+                <ul class="dropdown-content">
+                    <a href="#">Subscriptions</a>
+                    <a href="marchandise.html">Marchandise</a>
+                    <a href="#">Youtube Membership</a>
+                </ul>
+            </li>
+
+              <!-- Dropdown for Services -->
+              <li class="dropdown">
+                <a href="service.html" class="dropdown-btn">Services</a>
+                <ul class="dropdown-content">
+                    <a href="generaldisc.html">General Discussion</a>
+                    <a href="contactus.html">Contact us</a>
+                </ul>
+            </li>
+            <li><a href="aboutme.html">About</a></li>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <a href="login.html" class="nav-link">Login</a>
+    </div>
+    </nav>
+    
+    <div class="nav-toggle">
+        <i class="fas fa-bars"></i> <!-- Use a hamburger icon here -->
+    </div>
+    
+    <!-- Wallpaper Section -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>Welcome to Our Gaming Community</h1>
+            <p>Explore the latest videos, live streams, and more!</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content">
+        <div class="content-category" id="main-videos">
+            <h2>Main Videos</h2>
+            <div class="video-container">
+                <div class="video-card">
+                    <img src="Images/zzz.jpg" alt="Video Thumbnail">
+                    <h3>Gameplay: Zombie Pandamic in Minecraft</h3>
+                    <p>Watch our latest game reviews and deep dives.</p>
+                </div>
+                <div class="video-card">
+                    <img src="Images/dom.jpg" alt="Video Thumbnail">
+                    <h3>Top 10 Strategies in Gaming</h3>
+                    <p>Master your gameplay with these strategies.</p>
+                </div>
+            </div>
+        </div>
+<!-- Video Categories Section -->
+<section id="video-categories">
+    <h2>Our Gaming Videos</h2>
+    <div class="category-buttons">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="action">Action</button>
+        <button class="filter-btn" data-category="adventure">Adventure</button>
+        <button class="filter-btn" data-category="racing">Racing</button>
+    </div>
+
+    <div class="video-grid">
+        <!-- Action Games -->
+        <div class="video-item" data-category="action">
+            <iframe src="https://youtu.be/R793Ywm9Pxg?si=2mDaa9o8Z9ZqZJFf" allowfullscreen></iframe>
+            <p>Action Game 1</p>
+        </div>
+        <div class="video-item" data-category="action">
+            <iframe src="https://youtu.be/VAW11qJ-OSU?si=StgQSukIIr-xLygh" allowfullscreen></iframe>
+            <p>Action Game 2</p>
+        </div>
+
+        <!-- Adventure Games -->
+        <div class="video-item" data-category="adventure">
+            <iframe src="https://youtu.be/I9WFw3dPsxY?si=-PVqwCTUfbMUYPzj" allowfullscreen></iframe>
+            <p>Adventure Game 1</p>
+        </div>
+        <div class="video-item" data-category="adventure">
+            <iframe src="https://youtu.be/wAM3bgbcbo4?si=JrhUE-Om_y6woilh" allowfullscreen></iframe>
+            <p>Adventure Game 2</p>
+        </div>
+
+        <!-- Racing Games -->
+        <div class="video-item" data-category="racing">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID5" allowfullscreen></iframe>
+            <p>Racing Game 1</p>
+        </div>
+        <div class="video-item" data-category="racing">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID6" allowfullscreen></iframe>
+            <p>Racing Game 2</p>
+        </div>
+    </div>
+</section>
+
+        <div class="content-category" id="live-now">
+            <h2>Live Now</h2>
+            <div class="video-container">
+                <div class="video-card">
+                    <img src="Images/pubg-mobile-2024-games-5k-5120x2880-17806.jpg" alt="Live Thumbnail">
+                    <h3>Live Gameplay: Battle Royale</h3>
+                    <p>Join us for a live gameplay session!</p>
+                </div>
+                <div class="video-card">
+                    <img src="Images/metal-gear-solid-5120x2880-18460.jpg" alt="Live Thumbnail">
+                    <h3>Gameplay: Metal Gear Solid Snake-Eater</h3>
+                    <p>Get insights from game developers live now.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-category" id="upcoming-streams">
+            <h2>Upcoming Streams</h2>
+            <div class="video-container">
+                <div class="video-card">
+                    <img src="Images/call-of-duty-black-3840x2160-17011.jpg" alt="Stream Thumbnail">
+                    <h3>Upcoming Stream: New Game Release</h3>
+                    <p>Date: September 20, 2024</p>
+                </div>
+                <div class="video-card">
+                    <img src="Images/black-myth-wukong-7680x4320-18173.jpg" alt="Stream Thumbnail">
+                    <h3>Upcoming Stream: Black Myth Wukong</h3>
+                    <p>Date: October 1, 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-category" id="past-streams">
+            <h2>Past Streams</h2>
+            <div class="video-container">
+                <div class="video-card">
+                    <img src="Images/dragon-neon-ai-art-5824x3264-12813.jpg" alt="Stream Thumbnail">
+                    <h3>Past Stream: Community Tournament</h3>
+                    <p>Date: August 5, 2024</p>
+                    <a href="#">Watch Replay</a>
+                </div>
+                <div class="video-card">
+                    <img src="Images/agent-47-hitman.jpeg" alt="Stream Thumbnail">
+                    <h3>Past Stream: Hitman 3</h3>
+                    <p>Date: July 10, 2024</p>
+                    <a href="#">Watch Replay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="quick-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="/assets/icons/google.png" alt="Google"></a>
+            <a href="#"><img src="/assets/icons/facebook social.png" alt="Facebook"></a>
+            <a href="#"><img src="/assets/icons/twitter social.png" alt="Twitter"></a>
+            <a href="#"><img src="/assets/icons/youtube logo.png" alt="YouTube"></a>
+        </div>
+    </div>
+    <p>&copy; 2024 Zox Addon. All Rights Reserved.</p>
+</footer>
+  <!-- JavaScript -->
+  <script src="content.js"></script>
+</body>
+</html>
